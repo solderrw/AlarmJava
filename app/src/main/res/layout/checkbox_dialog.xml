@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/checkBoxMonday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Понедельник"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp" />
+
+        <CheckBox
+            android:id="@+id/checkBoxTuesday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Вторник"
+            android:layout_below="@id/textViewSelectedMusic"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp" />
+
+        <CheckBox
+            android:id="@+id/checkBoxWednesday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Среда"
+            android:layout_below="@id/textViewSelectedMusic"
+            android:layout_toEndOf="@id/checkBoxTuesday"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp" />
+
+        <CheckBox
+            android:id="@+id/checkBoxThursday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Четверг"
+            android:layout_below="@id/textViewSelectedMusic"
+            android:layout_toEndOf="@id/checkBoxWednesday"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp" />
+
+        <CheckBox
+            android:id="@+id/checkBoxFriday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Пятница"
+            android:layout_below="@id/textViewSelectedMusic"
+            android:layout_toEndOf="@id/checkBoxThursday"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp" />
+
+        <CheckBox
+            android:id="@+id/checkBoxSaturday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Суббота"
+            android:layout_below="@id/textViewSelectedMusic"
+            android:layout_toEndOf="@id/checkBoxFriday"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp" />
+
+        <CheckBox
+            android:id="@+id/checkBoxSunday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Воскресенье"
+            android:layout_below="@id/textViewSelectedMusic"
+            android:layout_toEndOf="@id/checkBoxSaturday"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp" />
+
+    </LinearLayout>

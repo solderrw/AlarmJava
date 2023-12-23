@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Изменение времени"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:padding="16dp"
+        android:background="#393939"
+        android:textColor="#fff"
+        tools:ignore="HardcodedText" />
+
+    <TimePicker
+        android:id="@+id/timePickerChange"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewTitle"
+        android:timePickerMode="spinner" />
+
+    <Button
+        android:id="@+id/buttonChangeTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timePickerChange"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Изменить"
+        android:onClick="onChangeTimeClick" />
+
+    <Button
+        android:id="@+id/buttonChooseDaysChange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Выбрать дни недели"
+        android:layout_below="@+id/buttonChangeTime"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <!-- Метка для отображения информации о выбранами дни -->
+    <TextView
+        android:id="@+id/textViewSelectedDayChange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonChooseDaysChange"
+        android:layout_marginTop="16dp"
+        android:text="Выбранные дни: "
+        android:gravity="center"
+        tools:ignore="HardcodedText" />
+
+    <!-- Кнопка "Выбор музыки для изменения текущей музыки " -->
+    <Button
+        android:id="@+id/buttonChooseMusic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Выбрать музыку "
+        android:layout_below="@+id/textViewSelectedDayChange"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        tools:ignore="HardcodedText" />
+
+    <!-- место для отображения информации о текущей музыки  -->
+    <TextView
+        android:id="@+id/textViewSelectedMusic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonChooseMusic"
+        android:layout_marginTop="16dp"
+        android:text="текущая музыка:"
+        android:gravity="center"
+        tools:ignore="HardcodedText" />
+</RelativeLayout>

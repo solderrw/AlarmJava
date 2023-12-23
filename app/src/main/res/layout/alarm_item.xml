@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:layout_width="120dp"
+        android:layout_height="79dp"
+        android:layout_weight="0"
+        android:orientation="vertical">
+
+        <!-- Ваш основной TextView -->
+        <TextView
+            android:id="@+id/textViewTime"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingStart="16dp"
+            android:paddingEnd="8dp"
+            android:text="00:00"
+            android:textSize="28sp" />
+
+        <!-- Дополнительный TextView для показа информации дней на которые стоит будильник -->
+        <TextView
+            android:id="@+id/textViewLabel"
+            android:layout_width="120dp"
+            android:layout_height="29dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="1dp"
+            android:text="каждый день"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <Switch
+        android:id="@+id/switchAlarm"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_gravity="center_vertical"
+        android:padding="16dp"
+        android:layout_marginEnd="56dp"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <Button
+        android:id="@+id/buttonChange"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_gravity="center_vertical"
+        android:text="..."
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/buttonDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="3dp"
+        android:text="X"
+        tools:ignore="HardcodedText" />
+</LinearLayout>

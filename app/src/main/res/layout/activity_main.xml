@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Будильник"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:padding="16dp"
+        android:background="#393939"
+        android:textColor="#fff" />
+
+    <ListView
+        android:id="@+id/listViewAlarms"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/textViewTitle"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/buttonXml_new"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Добавление"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp" />
+
+</RelativeLayout>

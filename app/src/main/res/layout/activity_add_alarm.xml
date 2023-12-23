@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Добавление Будильника"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:padding="16dp"
+        android:background="#393939"
+        android:textColor="#fff"
+        tools:ignore="HardcodedText" />
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTitle"
+        android:timePickerMode="spinner" />
+
+    <Button
+        android:id="@+id/buttonAddAlarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Добавить"
+        android:layout_below="@id/timePicker"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/buttonChooseDays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Выбрать дни недели"
+        android:layout_below="@+id/buttonAddAlarm"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <!-- Метка для отображения информации о выбранами дни -->
+    <TextView
+        android:id="@+id/textViewSelectedDay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonChooseDays"
+        android:layout_marginTop="16dp"
+        android:text="Выбранные дни: "
+        android:gravity="center"
+        tools:ignore="HardcodedText" />
+
+    <!-- Кнопка "Выбор музыки" -->
+    <Button
+        android:id="@+id/buttonChooseMusic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Выбрать музыку"
+        android:layout_below="@+id/textViewSelectedDay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        tools:ignore="HardcodedText" />
+
+    <!-- Метка для отображения информации о выбранной музыке -->
+    <TextView
+        android:id="@+id/textViewSelectedMusic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonChooseMusic"
+        android:layout_marginTop="16dp"
+        android:text="Выбранная музыка: Нет"
+        android:gravity="center"
+        tools:ignore="HardcodedText" />
+
+
+
+</RelativeLayout>
